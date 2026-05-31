@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday BOSS 🎉</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css"/>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Confetti -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+
+<!-- MUSIC -->
+<audio id="birthdayMusic" autoplay loop>
+  <source src="song.mp3" type="audio/mp3">
+</audio>
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+  <div class="content">
+
+    <h1>Happy Birthday 🎉</h1>
+
+    <h2>Param Mittar🤍</h2>
+
+    <!-- HER PHOTO -->
+    <img src="image/herphoto.jpeg" class="hero-photo">
+
+    <p class="message">
+      Thank you for always supporting me,
+      making me smile,
+      and being an important part of my life ✨
+    </p>
+
+    <!-- BUTTONS -->
+    <div class="hero-btn-container">
+      <button onclick="playMusic()">Play Music 🎵</button>
+      <button onclick="pauseMusic()">Pause Music ⏸</button>
+      <button onclick="showSurprise()">Open Surprise 🎁</button>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- MEMORIES -->
+<section class="memories">
+
+  <h2 class="reveal-element">Beautiful Memories 📸</h2>
+
+  <div class="gallery">
+
+    <div class="card">
+      <img src="image/photo1.jpeg">
+      <p>unbreakable Duo🫶🧿🤝</p>
+    </div>
+
+    <div class="card">
+      <img src="image/photo 3.jpeg">
+      <p>personal devi mata🙇‍♂️</p>
+    </div>
+
+    <div class="card">
+      <img src="image/photo 4.jpeg">
+      <p>two idiots😂</p>
+    </div>
+
+    <div class="card">
+      <img src="image/herphoto.jpeg">
+      <p>you are the best💕</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- LETTER -->
+<section class="letter">
+
+  <h2 class="reveal-element">A Letter For You 💌</h2>
+
+  <div class="reveal-element">
+    <p id="typingText"></p>
+  </div>
+
+</section>
+
+<!-- FINAL -->
+<section class="final">
+
+  <h2 class="reveal-element">Once Again...</h2>
+
+  <h1 class="reveal-element">Happy Birthday BOSS 🎂</h1>
+
+  <p class="reveal-element">
+    I hope your life is filled with happiness,
+    success, peace,
+    and beautiful memories ✨
+  </p>
+
+</section>
+
+<!-- SURPRISE MODAL -->
+<div id="surpriseModal" class="modal-overlay">
+  <div class="modal-content">
+    <span class="close-btn" onclick="closeSurprise()">&times;</span>
+    <div class="modal-decorations">🎉🎂✨💖</div>
+    <h2>Wishing You the Happiest of Birthdays! 🌟</h2>
+    <p class="modal-wish">
+      May your day be as bright and beautiful as your smile, filled with laughter, love, and endless joy. You deserve all the wonderful things this world has to offer. Thank you for being such an extraordinary person! 🥂✨
+    </p>
+    <button class="modal-action-btn" onclick="closeSurprise()">Thank You! ❤️</button>
+  </div>
+</div>
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
